@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Tour - Green Horizons Eco-Tours</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Book Your Eco-Tour</h2>
+    <p>Follow the steps below to confirm your sustainable adventure.</p>
+
+    <form action="process_booking.php" method="post" class="booking-form">
+
+      <!-- Step 1 -->
+      <fieldset>
+        <legend>🌱 Step 1: Choose Your Tour</legend>
+        <label>
+          <input type="radio" name="tour" value="Kruger Safari" required>
+          Kruger National Park Safari — R5,000
+        </label>
+        <label>
+          <input type="radio" name="tour" value="Cape Town Adventure">
+          Cape Town Eco-Adventure — R4,500
+        </label>
+        <label>
+          <input type="radio" name="tour" value="Custom Package">
+          Custom Eco-Package — Price on request
+        </label>
+      </fieldset>
+
+      <!-- Step 2 -->
+      <fieldset>
+        <legend>👤 Step 2: Your Details</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+27 82 123 4567" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+      </fieldset>
+
+      <!-- Step 3 -->
+      <fieldset>
+        <legend>💳 Step 3: Payment Information</legend>
+        <label for="card">Card Number:</label>
+        <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+
+        <label for="expiry">Expiry Date:</label>
+        <input type="month" id="expiry" name="expiry" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+      </fieldset>
+
+      <button type="submit" class="cta">✅ Confirm Booking</button>
+    </form>
+  </main>
+</body>
+</html>

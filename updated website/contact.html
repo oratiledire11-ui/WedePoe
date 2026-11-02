@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Green Horizons Eco-Tours | Sustainable Travel South Africa</title>
+
+    <meta name="description"
+          content="Contact Green Horizons Eco-Tours for general enquiries, feedback, partnerships, and support.">
+
+    <meta name="keywords"
+          content="contact eco tours, sustainable travel contact, South Africa eco tourism">
+
+    <meta name="author"
+          content="Green Horizons Eco-Tours">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="contact-section fade-in">
+
+        <h1>Contact Green Horizons Eco-Tours</h1>
+
+        <p>
+            Have a question, partnership proposal, complaint, or feedback?
+            We'd love to hear from you.
+        </p>
+
+        <form id="contactForm">
+
+            <label for="fullName">Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                required
+                minlength="3"
+                maxlength="50">
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                required>
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="0821234567"
+                required>
+
+            <label for="messageType">Message Type</label>
+
+            <select id="messageType" required>
+                <option value="">Select Message Type</option>
+                <option>General Query</option>
+                <option>Feedback</option>
+                <option>Complaint</option>
+                <option>Partnership</option>
+            </select>
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                rows="6"
+                required>
+            </textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <div id="successMessage"></div>
+
+    </section>
+
+    <section class="location fade-in">
+
+        <h2>Find Us</h2>
+
+        <p>
+            📍 123 Eco Street, Johannesburg, South Africa
+        </p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb="
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <h3>Follow Us</h3>
+
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">X</a>
+
+    <p>
+        © 2026 Green Horizons Eco-Tours
+    </p>
+
+</footer>
+
+<script src="js/validation.js"></script>
+
+</body>
+</html>

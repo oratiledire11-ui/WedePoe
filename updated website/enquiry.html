@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour Enquiry | Green Horizons Eco-Tours</title>
+
+    <meta name="description" content="Request information about our eco-tour packages and receive an estimated quote.">
+    <meta name="keywords" content="eco tours, safari enquiry, South Africa travel, sustainable tourism">
+    <meta name="author" content="Green Horizons Eco-Tours">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="fade-in">
+
+    <h1>Tour Enquiry Form</h1>
+
+    <p>
+        Interested in one of our eco-tour packages? Complete the form below
+        to receive an estimated quote.
+    </p>
+
+    <form id="enquiryForm">
+
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            required
+            minlength="3">
+
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            id="email"
+            required>
+
+        <label for="tour">Select Tour Package</label>
+
+        <select id="tour" required>
+            <option value="">Choose a Package</option>
+            <option value="5000">Kruger National Park Safari - R5000</option>
+            <option value="4500">Cape Town Eco Adventure - R4500</option>
+            <option value="6000">Garden Route Explorer - R6000</option>
+        </select>
+
+        <label for="guests">Number of Guests</label>
+
+        <input
+            type="number"
+            id="guests"
+            min="1"
+            max="20"
+            required>
+
+        <label for="date">Preferred Travel Date</label>
+
+        <input
+            type="date"
+            id="date"
+            required>
+
+        <button type="submit">
+            Get Estimated Quote
+        </button>
+
+    </form>
+
+    <div id="response"></div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>📍 123 Eco Street, Johannesburg, South Africa</p>
+
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X</a>
+    </div>
+
+    <p>&copy; 2026 Green Horizons Eco-Tours</p>
+
+</footer>
+
+<script src="js/enquiry.js"></script>
+
+</body>
+</html>
